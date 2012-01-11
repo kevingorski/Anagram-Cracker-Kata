@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- CodeMirror: JavaScript -->
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <style type="text/css">
+		.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+		.activeline {background: #f0fcff !important;}
+	</style>
+
+	<script src="js/libs/modernizr-2.0.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+	<header>
+		<h1>Anagram Cracker &amp; Conflicting Objectives</h1>
+	</header>
+	<div id="main" role="main">
+		<p>For this kata, we’re going to write a program to solve a simple problem, and we’re going to write it with three different sub-objectives.</p>
+		
+		<h2>The Simple Problem</h2>
+		<p>Given an array of words, print out all the combinations of words that are anagrams; each line in the output contains all the words from the input that are anagrams of each other:</p>
+		<pre><code>bat tab
+enlist inlets listen silent</code></pre>
+
+		<h2>Sub-Objectives</h2>
+		<ol>
+			<li>Write the code as readable as you can make it.</li>
+			<li>Write the code to run fast fast as you can make it.</li>
+			<li>Write as extendible a program as you can.</li>
+		</ol>
+		
+		<h2>Potentially Helpful Resources</h2>
+		<ul>
+			<li><a href="https://developer.mozilla.org/en/JavaScript/Reference">All the JavaScripts</a></li>
+			<li><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Arrays</a></li>
+			<li><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">Strings</a></li>
+		</ul>
+		
+		<h2>Exercise</h2>
+
+		<h3>Version 1: Readable</h3>
+		<textarea id="ReadableCode" name="ReadableCode">// Demo code
+console.log(wordList.length);</textarea>
+		<button id="RunReadable" class="btn primary">Run</button>
+
+		<h3>Version 2: Speed</h3>
+		<p>TODO: Put JSPerf examples here.</p>
+		<textarea id="SpeedCode" name="SpeedCode">// Demo code
+console.log(wordList.length);</textarea>
+		<button id="RunSpeed" class="btn primary">Run</button>
+
+		<details>
+			<summary>More Challenges</summary>
+			<p>Find the longest words that are anagrams, and find the set of anagrams containing the most words</p>
+		</details>
+
+		<details>
+			<summary>Reflection</summary>
+			<p>Now look back at the three programs and think about how each of the three subobjectives interacts with the others. For example, does making the program as fast as possible make it more or less readable? Does it make easier to extend? Does making the program readable make it slower or faster, flexible or rigid? And does making it extendible make it more or less readable, slower or faster? Are any of these correlations stronger than others? What does this mean in terms of optimizations you may perform on the code you write?</p>
+		</details>
+	</div>
+	<footer>
+		Sources: Dave Thomas' <a href="http://codekata.pragprog.com/2007/01/kata_six_anagra.html">Kata Six: Anagrams</a> and <a href="http://codekata.pragprog.com/2007/01/kata_eight_conf.html">Kata Eight: Conflicting Objectives</a>.
+	</footer>
+</div>
+
+<script src="js/plugins.js"></script>
+<script src="js/libs/codemirror/codemirror.js"></script>
+<script src="js/libs/codemirror/javascript.js"></script>
+<script src="js/libs/benchmark.js"></script>
+<script src="js/libs/jquery-1.7.1.min.js"></script>
+<script src="js/libs/amplify.store.js"></script>
+<script src="js/libs/jquery.details.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
