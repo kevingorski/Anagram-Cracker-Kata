@@ -30,7 +30,7 @@
 		<h1>Anagram Cracker &amp; Conflicting Objectives</h1>
 	</header>
 	<div id="main" role="main">
-		<p>For this kata, we’re going to write a program to solve a simple problem, and we’re going to write it with three different sub-objectives.</p>
+		<p>For this kata, we’re going to write a program to solve a simple problem, and we’re going to write it with two different sub-objectives.</p>
 		
 		<h2>The Simple Problem</h2>
 		<p>Given an array of words, print out all the combinations of words that are anagrams; each line in the output contains all the words from the input that are anagrams of each other:</p>
@@ -41,7 +41,6 @@ enlist inlets listen silent</code></pre>
 		<ol>
 			<li>Write the code as readable as you can make it.</li>
 			<li>Write the code to run fast fast as you can make it.</li>
-			<li>Write as extendible a program as you can.</li>
 		</ol>
 		
 		<h2>Potentially Helpful Resources</h2>
@@ -49,6 +48,8 @@ enlist inlets listen silent</code></pre>
 			<li><a href="https://developer.mozilla.org/en/JavaScript/Reference">All the JavaScripts</a></li>
 			<li><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Arrays</a></li>
 			<li><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">Strings</a></li>
+			<li><a href="http://getfirebug.com/logging">Logging with Firebug</a></li>
+			<li><a href="http://code.google.com/chrome/devtools/docs/console.html">Logging with Chrome Developer Tools</a></li>
 		</ul>
 		
 		<h2>Exercise</h2>
@@ -59,8 +60,20 @@ console.log(wordList.length);</textarea>
 		<button id="RunReadable" class="btn primary">Run</button>
 
 		<h3>Version 2: Speed</h3>
-		<p>TODO: Put JSPerf examples here.</p>
+		<p><a href="http://benchmarkjs.com/docs">Benchmark.js</a></p>
 		<textarea id="SpeedCode" name="SpeedCode">// Demo code
+var suite = new Benchmark.Suite;
+
+suite.add('Anagram Cracker #1', function() {
+	/o/.test('Hello World!');
+})
+.on('cycle', function(event, bench) {
+	console.log(String(bench));
+})
+.on('complete', function() {
+	console.log('Fastest is ' + this.filter('fastest').pluck('name'));
+})
+.run({ 'async': true });
 console.log(wordList.length);</textarea>
 		<button id="RunSpeed" class="btn primary">Run</button>
 

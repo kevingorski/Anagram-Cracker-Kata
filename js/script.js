@@ -32,21 +32,3 @@ if(!(wordList = amplify.store('wordList'))) {
 		amplify.store('wordList', wordList);
 	});
 }
-
-
-// // http://benchmarkjs.com/docs
-// var suite = new Benchmark.Suite;
-// 
-// suite.add('RegExp#test', function() {
-//   /o/.test('Hello World!');
-// })
-// .add('String#indexOf', function() {
-//   'Hello World!'.indexOf('o') > -1;
-// })
-// .on('cycle', function(event, bench) {
-//   console.log(String(bench));
-// })
-// .on('complete', function() {
-//   console.log('Fastest is ' + this.filter('fastest').pluck('name'));
-// })
-// .run({ 'async': true });
